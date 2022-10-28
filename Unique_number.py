@@ -1,8 +1,11 @@
 n=int(input())
-x=str(n)
-y=set(x)
-if len(x) == len(y):
+a=[]
+while n>0:
+    x=n%10
+    a.append(x)
+    n=n//10
+b=set(a)    
+if len(a)==len(b):
     print('Unique Number')
 else:
     print('Not Unique Number')
-    
